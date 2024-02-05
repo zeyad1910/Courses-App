@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imv_android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/android"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/android_course"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/btn_color"
+                    app:cornerRadius="8dp"
+                    android:onClick="onClick"
+                    app:layout_constraintTop_toBottomOf="@id/imv_android"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/imv_ios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginStart="8dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/ios"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_android" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_ios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ios_course"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/btn_color"
+                    app:cornerRadius="8dp"
+                    android:onClick="onClick"
+                    app:layout_constraintTop_toBottomOf="@id/imv_ios"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/imv_fullstack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:adjustViewBounds="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/full_stack"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_ios" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_fullstack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_stack"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="@color/btn_color"
+                    app:cornerRadius="8dp"
+                    android:onClick="onClick"
+                    app:layout_constraintTop_toBottomOf="@id/imv_fullstack"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

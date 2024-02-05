@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Courses App</string>
+    <string name="android_course">Android Course</string>
+    <string name="ios_course">IOS Course</string>
+    <string name="full_stack">Full Stack</string>
+    <string name="course">course</string>
+    <string name="android">android</string>
+    <string name="ios">ios</string>
+    <string name="fullstack">fullstack</string>
+
+</resources>
